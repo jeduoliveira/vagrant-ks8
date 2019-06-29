@@ -15,7 +15,9 @@ master_node_ip_addr = IPAddr.new first_master_node_ip
 worker_node_ip_addr = IPAddr.new first_worker_node_ip
 
 Vagrant.configure(2) do |config|
-  config.vm.box = 'generic/ubuntu1904'
+  config.vm.box = 'generic/ubuntu1804'
+
+  config.vm.synced_folder ".", "/vagrant", disabled: false
 
   config.vm.provider 'virtualbox' do |vb|
     vb.linked_clone = true
