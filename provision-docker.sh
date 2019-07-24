@@ -8,6 +8,7 @@ set -eux
     curl \
     gnupg-agent \
     software-properties-common
+
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 
 apt-get -y update

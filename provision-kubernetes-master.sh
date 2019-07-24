@@ -45,7 +45,7 @@ $SHELL -c 'while [ -z "$(kubectl get pods --selector k8s-app=kube-dns --namespac
 
 # install the kubernetes dashboard.
 # see https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/
-kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/master/aio/deploy/recommended/kubernetes-dashboard.yaml
+kubectl apply -f kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0-beta1/aio/deploy/recommended.yaml
 
 # create the admin user.
 # see https://github.com/kubernetes/dashboard/wiki/Creating-sample-user
